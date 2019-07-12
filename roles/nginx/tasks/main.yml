@@ -13,12 +13,14 @@
   apt:
     upgrade: yes
 
-- name: Install nginx and java
+- name: Install nginx, java and python
   apt:
     name:
     - nginx
     - openjdk-8-jdk
     - apache2-utils
+    - python
+    - python3
     state: latest
 
 - name: Create backup config nginx in server
